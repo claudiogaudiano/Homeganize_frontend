@@ -1,12 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Header.css";
-import Sidebar from "./Sidebar"
+import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
 
 
 function Header() {
   return (
     <nav class="navbar bg-body-tertiary"> {/* fixed-top fa rimanere la nav in cima,  */}
-      <div class="container-fluid">
+       {/*nel momento in cui sposto l'attributo nel nav si rompetutto */}
 
         {/*Offcanvas*/}
         <div class="d-block d-sm-none">
@@ -57,7 +58,7 @@ function Header() {
           </li>
         </ul>
         </nav>
-      </div>
+      
     </nav>
   );
 }
