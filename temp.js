@@ -1,5 +1,3 @@
 //This is a temporary file test purpose
 
-//Aggiorno 
-
-//aggiorno2
+// test purpose 22 oct

@@ -11,7 +11,7 @@ function Header() {
         {/*Offcanvas*/}
         <div class="d-block d-sm-none">  {/*serve per mostrare l'offcanvas solo per schermi  xs*/}
         <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-     
+        <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">

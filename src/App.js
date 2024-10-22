@@ -58,12 +58,12 @@ function App() {
         <div class="row fixed-top"><Header />
         </div>
 
-        <div class="row"> {/* paddingTop permette il render sotto all'header */}
-          <div class="col-3 d-none d-sm-block" style={{ paddingTop: '70px' }}>
+        <div class="row container"> {/* paddingTop permette il render sotto all'header */}
+          <div class="col-1 d-none d-sm-block" style={{ paddingTop: '70px', height: '100vh'}}>
             <Sidebar />
           </div>
 
-          <div class="col" style={{ paddingTop: '56px' }}>
+          <div class="col" style={{ paddingTop: '56px'}}>
             <Router>
               <main className="main-content p-4"> {/* main is useful for SEO*/}
                 <Routes>
