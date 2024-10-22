@@ -5,13 +5,13 @@ import Sidebar from "./Sidebar"
 
 function Header() {
   return (
-    <nav class="navbar bg-body-tertiary"> {/* fixed-top fa rimanere la nav in cima,  */}
-      <div class="container-fluid">
+    <nav class="navbar fixed-top bg-body-tertiary container-fluid"> {/* fixed-top fa rimanere la nav in cima,  */}
+      {/*<div class="container-fluid"> {/*container-fluid posiziona l'elemento al 100% della lunghezza della pagina*/}
 
         {/*Offcanvas*/}
-        <div class="d-block d-sm-none">
+        <div class="d-block d-sm-none">  {/*serve per mostrare l'offcanvas solo per schermi  xs*/}
         <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+     
         </button>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
@@ -32,8 +32,8 @@ function Header() {
           <div className="d-none d-sm-inline"> Homeganizer</div>
         </a>
 
-        <nav class="navbar-expand">
         {/*Right-side of Navbar*/}
+        <nav class="navbar-expand">
         <ul class="navbar-nav me-4">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Login</a>
@@ -57,7 +57,7 @@ function Header() {
           </li>
         </ul>
         </nav>
-      </div>
+      {/*</div>*/}
     </nav>
   );
 }

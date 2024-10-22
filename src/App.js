@@ -17,20 +17,21 @@ function App() {
 
   //PRIMO CODICE. DA CONTROLLARE IN SEGUITO
 
-  /*  const [message, setMessage] = useState('');
+    /*const [message, setMessage] = useState('');
   
     useEffect(() => {
       // Esempio di richiesta GET al backend
       axios.get('http://localhost:5000/api/hello')
         .then(response => {
           setMessage(response.data.message);
+          console.log(`Messaggio dal frontend`);
         })
         .catch(error => {
           console.error("There was an error!", error);
         });
-    }, []);
+    },
   
-    
+  
     return (
       <div className="App">
         <h1>{message}</h1>
