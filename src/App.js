@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';  //useEffect e useState anco
 import axios from 'axios';
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
-import MainContent from "./components/MainContent";
 import Header from "./components/Header" //Importa l'header
 import { BrowserRouter as Router } from "react-router-dom"; //libreria per il routing in react 
 import { Settings } from "./pagine/Settings";
@@ -68,7 +67,7 @@ function App() {
             <Router>
               <main className="main-content p-4"> {/* main is useful for SEO*/}
                 <Routes>
-                  <Route path="/" element={<MainContent />} />
+                  <Route path="/" element={<Tasks />} />
                   <Route path="/Settings" element={<Settings />} />
                   <Route path="/Login" element={<Login />} />
                   <Route path="/SignUp" element={<SignUp />} />

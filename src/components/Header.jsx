@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Header.css";
 import Sidebar from "./Sidebar";
-import Navbar from "./Navbar";
 
 
 function Header() {
