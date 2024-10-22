@@ -1,11 +1,11 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';  //useEffect e useState ancora non utilizzate
 import axios from 'axios';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import MainContent from './components/MainContent';
 import { Routes, Route } from "react-router-dom";
-import { Home } from "./pagine/Home";
+import Sidebar from "./components/Sidebar";
+import MainContent from "./components/MainContent";
+import Header from "./components/Header" //Importa l'header
+import { BrowserRouter as Router } from "react-router-dom"; //libreria per il routing in react 
 import { Settings } from "./pagine/Settings";
 import { Login } from "./pagine/Login";
 import { SignUp } from "./pagine/SignUp";
@@ -53,15 +53,34 @@ function App() {
   }*/
 
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Settings" element={<Settings />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/SignUp" element={<SignUp />} />
-        <Route path="/Tasks" element={<Tasks />} />
-        <Route path="*" element={<Page404 />} />
-      </Routes>
+
+    <div >
+      <div class="container text-center">
+        <div class="row fixed-top"><Header />
+        </div>
+
+        <div class="row"> {/* paddingTop permette il render sotto all'header */}
+          <div class="col-3 d-none d-sm-block" style={{ paddingTop: '70px' }}>
+            <Sidebar />
+          </div>
+
+          <div class="col" style={{ paddingTop: '56px' }}>
+            <Router>
+              <main className="main-content p-4"> {/* main is useful for SEO*/}
+                <Routes>
+                  <Route path="/" element={<MainContent />} />
+                  <Route path="/Settings" element={<Settings />} />
+                  <Route path="/Login" element={<Login />} />
+                  <Route path="/SignUp" element={<SignUp />} />
+                  <Route path="/Tasks" element={<Tasks />} />
+                  <Route path="*" element={<Page404 />} />
+                </Routes>
+              </main>
+            </Router>
+          </div>
+        </div>
+
+      </div>
     </div>
   );
 }

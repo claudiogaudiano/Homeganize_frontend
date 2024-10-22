@@ -1,12 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Header.css";
-import Sidebar from "./Sidebar"
+import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
 
 
 function Header() {
   return (
-    <nav class="navbar fixed-top bg-body-tertiary container-fluid"> {/* fixed-top fa rimanere la nav in cima,  */}
-      {/*<div class="container-fluid"> {/*container-fluid posiziona l'elemento al 100% della lunghezza della pagina*/}
+    <nav class="navbar bg-body-tertiary"> {/* fixed-top fa rimanere la nav in cima,  */}
+       {/*nel momento in cui sposto l'attributo nel nav si rompetutto */}
 
         {/*Offcanvas*/}
         <div class="d-block d-sm-none">  {/*serve per mostrare l'offcanvas solo per schermi  xs*/}
@@ -57,7 +58,7 @@ function Header() {
           </li>
         </ul>
         </nav>
-      {/*</div>*/}
+      
     </nav>
   );
 }
