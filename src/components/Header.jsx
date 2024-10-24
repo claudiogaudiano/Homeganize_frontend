@@ -5,13 +5,13 @@ import Sidebar from "./Sidebar";
 
 function Header() {
   return (
-    <nav class="navbar bg-body-tertiary"> {/* fixed-top fa rimanere la nav in cima,  */}
+    <nav className="navbar bg-body-tertiary"> {/* fixed-top fa rimanere la nav in cima,  */}
        {/*nel momento in cui sposto l'attributo nel nav si rompetutto */}
 
         {/*Offcanvas*/}
-        <div class="d-block d-sm-none">  {/*serve per mostrare l'offcanvas solo per schermi  xs*/}
-        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <div className="d-block d-sm-none">  {/*serve per mostrare l'offcanvas solo per schermi  xs*/}
+        <button className="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">

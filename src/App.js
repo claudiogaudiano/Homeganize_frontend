@@ -55,10 +55,11 @@ function App() {
 
     <div >
       <div class="container text-center">
-        <div class="row fixed-top"><Header />
+        <div className="row fixed-top"><Header />
         </div>
 
         <div class="row container"> {/* paddingTop permette il render sotto all'header */}
+          {/*per non far scendere la sidebar creo una riga vuota flessibile sotto di essa*/}
           <div class="col-1 d-none d-sm-block" style={{ paddingTop: '70px', height: '100vh'}}>
             <Sidebar />
           </div>
