@@ -1,20 +1,40 @@
 .card {
     border: 1px solid hsl(0, 0%, 80%);
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
-    padding: 20 px;
-    margin:10 px;
-    text-align: center;
-    max-width: 250px;
-    display: inline-block
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Spazio tra le card */
+    border-radius: 8px; /* Angoli arrotondati */
 }
 
-.card .taskName {
-    color: aqua;
-    font-size: 24px;
+.icon-container {
+    cursor: pointer; /* Cambia il cursore per indicare cliccabile */
+    font-size: 3rem; /* Dimensione dell'icona */
 }
 
-.taskName {
-    color: #333;
-    font-size: 24px;
+.task-name {
+    font-weight: bold; /* Grassetto per il nome del task */
+}
+
+.task-priority {
+    position:absolute;
+    top: 3px;
+    right: 23px;
+    font-style: italic; /* Corsivo per la priorità */
+}
+
+.task-urgent{
+    background-color: red;
+}
+
+.complete {
+    background-color: hsl(120, 86%, 37%);
+}
+
+.not-expanded{
+    max-width: ;
+    
+}
+
+.moreInfoContent {
+    max-height: 112px; /*exact px count for 4 lines*/
+    overflow-y: auto;
 }

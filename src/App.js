@@ -5,7 +5,6 @@ import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header" //Importa l'header
 import { BrowserRouter as Router } from "react-router-dom"; //libreria per il routing in react 
-import { Settings } from "./pagine/Settings";
 import { Login } from "./pagine/Login";
 import { SignUp } from "./pagine/SignUp";
 import { Tasks } from "./pagine/Tasks";
@@ -51,25 +50,27 @@ function App() {
     );
   }*/
 
+    const userId = 123;
+
   return (
 
     <div >
-      <div class="container text-center">
-        <div className="row fixed-top"><Header />
-        </div>
+      <div className="container-fluid">
+        <header className="row fixed-top">
+          <Header />
+        </header>
 
-        <div class="row container"> {/* paddingTop permette il render sotto all'header */}
+        <div className="row"> {/* paddingTop permette il render sotto all'header */}
           {/*per non far scendere la sidebar creo una riga vuota flessibile sotto di essa*/}
-          <div class="col-1 d-none d-sm-block" style={{ paddingTop: '70px', height: '100vh'}}>
+          <nav className="sidebar col-2 d-none d-sm-block text-center" style={{ paddingTop: '70px', height: '100vh'}}>
             <Sidebar />
-          </div>
+          </nav>
 
-          <div class="col" style={{ paddingTop: '56px'}}>
+          <div className="col" style={{ paddingTop: '56px'}}>
             <Router>
-              <main className="main-content p-4"> {/* main is useful for SEO*/}
+              <main className="main-content text-center" handleUser={userId}> {/* main is useful for SEO*/}
                 <Routes>
                   <Route path="/" element={<Tasks />} />
-                  <Route path="/Settings" element={<Settings />} />
                   <Route path="/Login" element={<Login />} />
                   <Route path="/SignUp" element={<SignUp />} />
                   <Route path="/Tasks" element={<Tasks />} />

@@ -1,19 +1,20 @@
-/* Header.css */
+/* Header.css 
 .navbar {
-    background-color: #4CAF50; /* Sostituisci con il tuo colore desiderato */
+    background-color: #4CAF50; /* Sostituisci con il tuo colore desiderato /
 }
 
 .navbar .nav-link {
-    color: rgb(214, 82, 82); /* Cambia il colore del testo del link */
+    color: rgb(214, 82, 82); /* Cambia il colore del testo del link /
 }
 
 .navbar .nav-link.active {
-    color: #000000; /* Colore per il link attivo */
+    color: #000000; /* Colore per il link attivo /
 }
 
 .navbar .btn-secondary {
     font-size: 100;
     width: 40px;
-    background-color: #636d78; /* Cambia il colore del pulsante */
-    border: none; /* Rimuovi il bordo se necessario */
+    background-color: #636d78; /* Cambia il colore del pulsante /
+    border: none; /* Rimuovi il bordo se necessario /
 }
+*/
